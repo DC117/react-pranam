@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <hea>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranam React</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- this from HTML code  -->
+    <h1>
+        Hello top of rrot 
+    </h1>
+    <div id="root">
+      <h1>Hello World</h1>
+    </div>
+    <h1>
+        Hello below  rrot 
+    </h1>
+  </body>
+
+  <script>
+    // using the the hTML same code above
+
+    const heading = document.createElement("h1");
+    const paragraph = document.createElement("p");
+    heading.innerHTML = "Hello wolrd from js";
+    paragraph.innerHTML = "Hello wolrd from js Hahhahaha";
+    const root = document.getElementById("root");
+    root.appendChild(heading);
+    root.appendChild(paragraph);
+  </script>
+
+  <!-- one way of injecting react in our project -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script src="./App.js"></script>
+</html>
